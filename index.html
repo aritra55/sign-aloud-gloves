@@ -1,1 +1,136 @@
-# sign-aloud-gloves
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Aloud Gloves | Gesture to Speech System</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f7fb;
+      color: #333;
+    }
+    header {
+      background: #0b5ed7;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 10px auto 0;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #0b5ed7;
+      margin-bottom: 15px;
+    }
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+    ul {
+      padding-left: 20px;
+    }
+    footer {
+      background: #0b5ed7;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+    .highlight {
+      background: #e9f1ff;
+      border-left: 5px solid #0b5ed7;
+      padding: 15px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Sign Aloud Gloves</h1>
+    <p>A Gesture to Speech System that converts hand movements into voice output to help mute and speech‑impaired people communicate effectively.</p>
+  </header>
+
+  <section>
+    <h2>About the Project</h2>
+    <div class="highlight">
+      <p>
+        Sign Aloud Gloves is an assistive technology project built using Arduino. It detects hand gestures using a gyroscope sensor and touch sensors, then converts those gestures into pre‑recorded voice messages using a DF Player Mini.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Objectives</h2>
+    <ul>
+      <li>Help mute and speech‑impaired people express their thoughts</li>
+      <li>Convert hand gestures into audible speech</li>
+      <li>Create a low‑cost and portable assistive device</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Hardware Components</h2>
+    <div class="card-container">
+      <div class="card">Arduino Uno</div>
+      <div class="card">MPU‑6050 Gyroscope & Accelerometer</div>
+      <div class="card">Touch Sensors (2x)</div>
+      <div class="card">DF Player Mini</div>
+      <div class="card">Speaker</div>
+      <div class="card">SD Card with Audio Files</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Working Principle</h2>
+    <p>
+      The MPU‑6050 sensor detects the orientation and movement of the hand. Touch sensors are used to trigger or confirm gestures. Based on the detected gesture, Arduino sends a command to the DF Player Mini, which plays the corresponding audio message through a speaker.
+    </p>
+  </section>
+
+  <section>
+    <h2>Applications</h2>
+    <ul>
+      <li>Communication aid for mute or speech‑impaired individuals</li>
+      <li>Educational demonstration of gesture recognition</li>
+      <li>Human‑Computer Interaction projects</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Future Improvements</h2>
+    <ul>
+      <li>Add more sensors for complex gestures</li>
+      <li>Wireless communication (Bluetooth / Wi‑Fi)</li>
+      <li>AI‑based gesture recognition</li>
+      <li>Mobile app integration</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2026 | Sign Aloud Gloves Project</p>
+  </footer>
+
+</body>
+  </html>
+  
